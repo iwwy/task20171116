@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Upload PDF File</title>
+  </head>
+  <body>
+    <header>
+      <h1>Upload PDF File</h1>
+    <header>
+    <main>
+      <form action="{% url 'crawler:upload_pdf_file' %}" method="post"
+        enctype="multipart/form-data">
+        <div>{% csrf_token %}{{ form }}<br />
+          <input type="submit" value="Upload" />
+        </div>
+      <form>
+    </main>
+  </body>
+</html>
