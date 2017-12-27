@@ -1,0 +1,33 @@
+The PDF Crawler
+Back-End Developer - Exercise Brief
+Imagine a web crawler that scans through web resources and documents to map the
+network and find connections between document and the Internet.
+The assignment is a basic stage of the crawler- a module that collects Internet addresses
+from PDF documents. Please implement a small, modular, Django application that
+receives PDF documents and provides information about the Internet URLs that appear in
+them.
+The assignment will be evaluated based off of the quality of the code, the design and
+structure of models, and the standardization of REST. Python version to use: 2.7.
+Application specification:
+1. Receive a PDF file that is uploaded in an http request. Analyze the document to find
+Internet URLs in the text, and then store them in the database (relational DB).
+2. The PDF file/content itself is not expected to be stored.
+3. The use of existing libraries for handling PDF documents is encouraged.
+4. The server should support the following REST WS:
+○ POST / FILE UPLOAD Uploading a PDF document, as described in part 1
+above
+○ GET / JSON Returns a set of all the of documents that were uploaded: ids,
+names and number of URLs that were found for each document
+○ GET / JSON Returns a set of URLs for a specific document
+○ GET / JSON Returns a set of all URLs found, including the number of
+documents that contained the URL
+5. Write down all the assumptions you have taken to readme.txt file.
+6. For every URL, hold an indication whether the URL is “alive”, that is, it will be false
+if, for example, a HTTP 4XX status returns when requesting the URL.
+7. Optional (recommended): Create an HTML single file that will support the
+uploading of a PDF file.
+Delivery:
+1. A link to a git repository, or a zip file, that contains all application files including a
+readme.txt file, with an example for each of the supported REST WS.
+Time : Up to 5 hours
+Good luck!
