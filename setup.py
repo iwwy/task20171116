@@ -10,7 +10,7 @@ with open(os.path.join(here, "CHANGES.rst")) as f:
     CHANGES = f.read()
 
 requires = [
-        "django==1.11.7",
+        "django==2.1.3",
         "djangorestframework==3.7.3",
         "markdown==2.6.9",
         "pdfminer==20140328",
