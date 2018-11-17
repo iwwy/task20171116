@@ -14,7 +14,7 @@ requires = [
         "djangorestframework==3.7.3",
         "markdown==2.6.9",
         "pdfminer==20140328",
-        "requests==2.19.1",
+        "requests>=2.20.0",
     ]
 
 setup(name="Assignment",
