@@ -11,7 +11,7 @@ with open(os.path.join(here, "CHANGES.rst")) as f:
 
 requires = [
         "django==2.1.3",
-        "djangorestframework==3.7.3",
+        "djangorestframework>=3.9.1",
         "markdown==2.6.9",
         "pdfminer==20140328",
         "requests>=2.20.0",
